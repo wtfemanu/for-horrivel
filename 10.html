@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA: REPRESENTANTE DE SALA
+    Peça para o programa perguntar ao professor regente o nome dos três candidatos a representante da sala.
+    Peça também para o programa perguntar ao professor regente a quantidade de alunos votantes.
+    Desenvolva um programa que armazene o voto de cada aluno da sala e apresente o resultado da votação, com o quantitativo de votos e também a porcentagem de votos de cada candidato a representante de sala.
+    */
+
+    //ENTRADA
+    const aluno1 = prompt(`informe o nome de um aluno pra ser regente`);
+    const aluno2 = prompt(`informe o nome de outro aluno pra ser regente`);
+    const aluno3 = prompt(`informe o nome de outro aluno pra ser regente`);
+
+    const quantidadeAlunos = Number(prompt(`quantos alunos vão votar?`))
+
+    let voto1 = [];
+    let voto2 = [];
+    let voto3 = [];
+
+    //PROCESSAMENTO
+    for(let i = 1; i <=quantidadeAlunos; i++){
+        let voto = prompt(`entre os alunos ${aluno1}, ${aluno2} e ${aluno3}, qual vc deseja votar?`) 
+
+        if(voto == aluno1){
+            voto1.push(voto)
+        }
+        else if (voto == aluno2){
+            voto2.push(voto)
+        }
+        else if (voto == aluno3){
+            voto3.push(voto)
+        }
+        else(alert(`aluno invalido`))
+    }
+
+    alert(`o aluno ${aluno1} teve ${voto1.length} votos  e ${((voto1 / quantidadeAlunos) * 100)}% dos votos,`)
+
+
+    //SAÍDA
+
+</script>

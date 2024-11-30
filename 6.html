@@ -6,11 +6,32 @@
     */
 
     //ENTRADA
+    const numeroInicial = Number(prompt(`ìnforme o numero inicial`));
+    const numeroFinal = Number(prompt(`informe o numero final`));
+    let impar =[]
+    let par= []
 
     
     //PROCESSAMENTO
 
+    if (numeroInicial > numeroFinal){
+        alert(`numero invalidos`)}
+    
+    else{
+        for(let i = numeroInicial ; i <=numeroFinal; i++){
+        if(i % 2 == 1){
+            impar.push(i)}
+        
+            else if(i % 2 == 0){
+                par.push(i)
+            }
+    }
+
+    }
+
+
     
     //SAÍDA
+    alert(`numero par:${par} numeros impar:${impar}`)
 
 </script>
