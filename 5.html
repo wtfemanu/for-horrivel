@@ -6,8 +6,17 @@
     */
 
     //ENTRADA
+    const pergunta  = Number(prompt(`informe um numero`));
+    let primo = true
 
+    if(pergunta <2){primo =false}
     
+    else{for(let i =2; i < pergunta; i++){
+      if(pergunta % i == 0) {primo = false}
+    }}
+
+    if(primo ) {alert(`o numero é primo`)}
+    else {alert(`o numero não é primo`)}
       
 
     
